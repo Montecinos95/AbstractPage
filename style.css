@@ -1,0 +1,99 @@
+/* Seccion de Busqueda */
+.parentUno {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr;
+    grid-column-gap: 0px;
+    grid-row-gap: 0px;
+    background-color: #dadbf1; 
+}
+    
+.divUno { 
+    grid-area: 1 / 1 / 2 / 2;
+}
+/* Seccion de Busqueda Hasta Aca */
+
+
+
+/* Seccion de Servicios */
+.parent {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    grid-column-gap: 0px;
+    grid-row-gap: 0px;
+    }
+    
+.div1 {
+    grid-area: 1 / 1 / 2 / 2;
+    display: flex;
+}
+
+.div2 {
+    grid-area: 1 / 2 / 2 / 3;
+    display: flex;
+}
+
+.div3 {
+    grid-area: 2 / 1 / 3 / 2;
+    display: flex;
+}
+
+.div4 {
+    grid-area: 2 / 2 / 3 / 3;
+    display: flex;
+}
+
+.div5 {
+    grid-area: 3 / 1 / 4 / 2;
+    display: flex;
+}
+
+.div6 {
+    grid-area: 3 / 2 / 4 / 3;
+    display: flex;
+}
+
+.Logo{
+    width: 30%;
+}
+
+.Text{
+    width: 80%;
+}
+
+.Logo img {
+    width: 40%;
+}
+/* Seccion de Servicios Hasta Aca */
+
+
+/* Seccion de Footer */
+.parentDos {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    grid-column-gap: 0px;
+    grid-row-gap: 0px;
+}
+    
+.divDos { 
+    grid-area: 1 / 1 / 3 / 2; 
+}
+
+.divTres { 
+    grid-area: 1 / 2 / 3 / 3; 
+}
+
+.divCuatro { 
+    grid-area: 1 / 3 / 3 / 4; 
+}
+
+.divCinco { 
+    grid-area: 1 / 4 / 3 / 5; 
+}
+
+.divSeis { 
+    grid-area: 1 / 5 / 3 / 6; 
+} 
+/* Seccion de Footer Hasta Aca*/
