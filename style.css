@@ -1,3 +1,60 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+Nav {
+    background-color: #000000;
+    margin: 0;
+}
+
+Nav li a {
+    color: white;
+}
+
 /* Seccion de Busqueda */
 .parentUno {
     display: grid;
@@ -6,10 +63,18 @@
     grid-column-gap: 0px;
     grid-row-gap: 0px;
     background-color: #dadbf1; 
+    justify-items: center;
+    align-items: center;
 }
     
 .divUno { 
     grid-area: 1 / 1 / 2 / 2;
+}
+
+.divUno h1 {
+    font-size: 5rem;
+    padding-top: 4rem;
+    padding-bottom: 6rem;
 }
 /* Seccion de Busqueda Hasta Aca */
 
@@ -22,16 +87,20 @@
     grid-template-rows: repeat(3, 1fr);
     grid-column-gap: 0px;
     grid-row-gap: 0px;
-    }
+    padding: 12% 10%;
+}
     
 .div1 {
     grid-area: 1 / 1 / 2 / 2;
     display: flex;
+    width: 100%;
+    padding-bottom: 20%;
 }
 
 .div2 {
     grid-area: 1 / 2 / 2 / 3;
     display: flex;
+    width: 100%;
 }
 
 .div3 {
@@ -54,17 +123,30 @@
     display: flex;
 }
 
-.Logo{
+.Logo {
     width: 30%;
 }
 
-.Text{
-    width: 80%;
+.Logo img {
+    width: 100%;
 }
 
-.Logo img {
-    width: 40%;
+.Text {
+    padding-left: 5%;
 }
+
+.Text h1{
+    margin: 0;
+    font-size: 1.7rem;
+    font-weight: bold;
+}
+
+.Text p {
+    padding-top: 3%;
+    font-size: 1.6rem;
+    padding-bottom: 4%;
+}
+
 /* Seccion de Servicios Hasta Aca */
 
 
@@ -75,6 +157,8 @@
     grid-template-rows: repeat(2, 1fr);
     grid-column-gap: 0px;
     grid-row-gap: 0px;
+    background-color: #000000;
+    color: white;
 }
     
 .divDos { 
